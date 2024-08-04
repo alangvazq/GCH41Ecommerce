@@ -9,5 +9,5 @@ import com.generation.Ecommerce.model.Orden;
 
 @Repository
 public interface OrdenRepository extends JpaRepository<Orden, Long> {
-	Optional<Orden> findByOrden(Long idOrden);
+	Optional<Orden> findByIdOrden(Long idOrden);
 }
