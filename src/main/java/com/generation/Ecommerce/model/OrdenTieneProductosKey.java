@@ -2,8 +2,8 @@ package com.generation.Ecommerce.model;
 
 import java.io.Serializable;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Embeddable;
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
 
 @Embeddable
 public class OrdenTieneProductosKey implements Serializable {
@@ -18,8 +18,9 @@ public class OrdenTieneProductosKey implements Serializable {
 	public OrdenTieneProductosKey() {
 	}
 
-	public OrdenTieneProductosKey(Long ordenUsuariosId, Long productosId) {
+	public OrdenTieneProductosKey(Long orden_id, Long ordenUsuariosId, Long productosId) {
 		super();
+		this.orden_id = orden_id;
 		this.ordenUsuariosId = ordenUsuariosId;
 		this.productosId = productosId;
 	}
